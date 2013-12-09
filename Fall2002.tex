@@ -1,0 +1,56 @@
+\documentclass[10pt]{article}
+
+\makeatletter \renewcommand\section{\@startsection{section}{1}{\z@}%
+  {-3.5ex \@plus -1ex \@minus -.2ex}%
+  {2.3ex \@plus.2ex}%
+  {\normalfont\large\bfseries}} \makeatother
+
+\addtolength{\oddsidemargin}{-.875in} \addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in} \addtolength{\topmargin}{-.875in} \addtolength{\textheight}{1.75in}
+
+\usepackage{amsmath, amssymb, amsthm, fancyhdr, graphicx, titlesec, titling}
+
+\setlength{\droptitle}{-6em} \posttitle{\par\end{center}\vspace{-4.8em}}
+
+\newcommand{\C}{\ensuremath{\mathbb{C}}} \newcommand{\CP}{\ensuremath{\mathbb{CP}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}} \newcommand{\RP}{\ensuremath{\mathbb{RP}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+
+\newcommand{\del}{\ensuremath{\partial}} \newcommand{\rank}{\ensuremath{\mathrm{rank}}}
+
+\newcommand{\advsection}{\addtocounter{section}{1} }
+
+\newcommand{\question}{\section} \newcommand{\subquestion}{\subsection}
+
+\pagestyle{fancyplain} \renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+\lhead{Frederick Robinson} \rhead{Fall 2002}
+
+\question{Suppose $P(x,y,z)$, $Q(x,y,q)$, and $R(x,y,z)$ are $C^\infty$ functions on $\R^3$ which
+  vanish identically if $|x| \geq 5$ and, $|y| \geq 5$, or $|z| \geq 5$. Prove that the volume
+  integral
+$$\int_{-6}^6 \int_{-6}^6 \int_{-6}^6 d(P dy \wedge dz + Q dx \wedge dz + R dx \wedge
+dy) =0$$ (Do this directly, not by quoting Stokes' Theorem: this is a special case of a proof of
+Stokes' Theorem!)  }
+
+\question{Suppose that $V = P(x,y,z) \frac{\del}{\del x} + Q(x,y,z) \frac{\del}{\del y} + R(x,y,z)
+  \frac{\del}{\del z} $ is a $C^{\infty} $ vector filed on $\R^{3}$ with $V \not= \vec{0}$ at the
+  origin. Find a necessary and sufficient condition for there to exist a $C^{\infty} $ function
+  $\lambda(x,y,z) $ in some neighborhood of the origin such that $\lambda V$ is the gradient of a
+  $C^{\infty}$ function on the neighborhood.  }
+
+\question{Let $T_t : \R^3 \to \R^3$ be the right-hand rule rotation around the positive $z$-axis by
+  $t$ degrees and $S_s : \R^3 \to \R^3 $ be the right-hand rule rotation around the positive
+  $x$-axis by $t$ degrees.}
+
+\subquestion{Find the infinitesimal generators of the flows $T_t$ and $S_t$, i.e., the vector fileds
+$X$ and $Y$, respectively, on $\R^3$ whose flows are $\{T_t\} $ and $\{ S_t\}$.}
+
+\subquestion{Compute the commutator $$T_{-t}\circ S_{-t}\circ T_t\circ S_t .$$}
+
+\subquestion{Compare the result of (B) (lowest order non-identically zero term) with the Lie bracket
+$[X,Y]$.}
+
+\end{document}
