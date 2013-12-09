@@ -1,0 +1,81 @@
+\documentclass[10pt]{article} 
+
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+                                  {-3.5ex \@plus -1ex \@minus -.2ex}%
+                                  {2.3ex \@plus.2ex}%
+                                  {\normalfont\large\bfseries}}
+\makeatother
+
+\addtolength{\oddsidemargin}{-.875in}
+\addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in}
+\addtolength{\topmargin}{-.875in}
+\addtolength{\textheight}{1.75in}
+
+\usepackage{amsmath, amssymb, amsthm, fancyhdr, graphicx, titlesec, titling}
+
+\setlength{\droptitle}{-6em}
+\posttitle{\par\end{center}\vspace{-4.8em}}
+
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\CP}{\ensuremath{\mathbb{CP}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\RP}{\ensuremath{\mathbb{RP}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+
+\newcommand{\del}{\ensuremath{\partial}}
+\newcommand{\rank}{\ensuremath{\mathrm{rank}}}
+
+\newcommand{\advsection}{\addtocounter{section}{1} }
+
+\pagestyle{fancyplain}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+\lhead{Frederick Robinson}
+\rhead{Spring 2001}
+
+\section{Suppose $M$ is a compact connected 3-manifold and $\omega$ is a nowhere zero 1-form defined on $M$. Suppose that the distribution $\ker \omega$ is integrable, and $\ker = T \mathcal{F}$ for a foliation $\mathcal{F}$.}
+\subsection{Show that $\omega \wedge d \omega = 0 $}
+\subsection{Use a partition of unity to show that there is a 1-form $\alpha$ such that $d \omega = \alpha \wedge \omega$.}
+\subsection{Show $d \alpha \wedge \omega = 0$. }
+\subsection{Suppose that $\alpha'$ is some other 1-form satisfying $d \omega = \alpha' \wedge \omega$. Show that $\alpha' = \alpha + g \omega$ for some  function $g$, and that $\alpha \wedge d \alpha = \alpha' \wedge d \alpha'$.}
+\subsection{Suppose that $\omega '$ is a nowhere zero 1-form and $\ker \omega = \ker \omega '$. If $d \omega' = \gamma \wedge \omega$, show that $\alpha \wedge d \alpha - \gamma \wedge d \gamma$ is exact.}
+
+\section{On the compact connected manifold $M$, suppose $\alpha$ is a $p$-form and $\beta$ is an $(n-p-1)$-form. Suppose $\del M$ has two components: $\del_0 M$ and $\del_1 M$. Let $i_0$ and $i_1$ be the inclusions of $\del_0 M$ and $\del_1 M$ into $M$. Given that $i_0^* \alpha =0$ and $i_1^* \beta =0$, show that $$\int_M  d \alpha \wedge \beta = (-1)^{p+1} \int_M \alpha \wedge d \beta$$}
+
+
+\section{Suppose $f: S^1 \to \R^2$ and $g : S^1 \to \R^2 $ are smooth embeddings. Let 
+$$M = \{ (a,b, \vec{v} ) \in S^1 \times S^1 \times \R^2 : f(a) - g(b) = \vec{v} \}.$$
+Show that $M$ is a compact submanifold of $S^1 \times S^1 \times \R^2$. Let $\pi : M \to \R^2$ be the projection $\pi( a, b , \vec{v}$. Apply Sard's Theorem to $\pi$ and deduce that for almost every $\vec{v} \in \R^2$, $f(S^1) $ is transverse to $g(S^1)+\vec{v}$.}
+
+\section{Suppose that $f: M \to N$ is a $C^\infty$ map, $M$ and $N$ are comact connected $n$-manifolds, and $\rank(df) = n$. Show that $f$ is a covering map.}
+
+\section{Let $X$ be a polyhedron, $A$ a subpolyhedron, $p: \tilde{X} \to X$ the universal covering space of $X$ and $\overline{A}$ the path component of $p^{-1} (A)$ containing the equivalence class of the constant path at $x_0 \in A$.}
+\subsection{Give an example in which $\overline{p} : \overline{A} \to A$ (where $\overline{p}$ is the restriction of $p$) is not the universal covering space of $A$. }
+\subsection{Prove that $\overline{p} : \overline{A} \to A$ is the covering space of the kernel of $i_* : \pi_1(A, x_0) \to \pi_1(X, x_0)$ where $i$ is inclusion.}
+
+\section{Let $D^n$ be the unit ball in $\R^n$, $S^{n-1}$ its boundary, and $0 \in \R^n$ the origin.}
+\subsection{Prove that the inclusion $i: (D^n, S^{n-1}) \to (D^n, D^n - 0)$ induces an isomorphism $i_*: H_n(D^n , S^{n-1}) \to H_n(D^n , D^n -0)$. }
+\subsection{Prove that $i$ is not a homotopy equivalence of pairs, that is, there is no map $g: (D^n, D^n - 0) \to (D^n , S^{n-1})$ such that $gi$ and $ig$ are homotopic, as maps of pairs, to identity maps.}
+
+
+\section{Given a map $f: X \to X$ of a polyhedron, there is an exact sequence
+$$\to H_k(X) \stackrel{1-f_*}{\to} H_k(X) \to H_k(T_f) \to H_{k-1}(X) \to $$
+where $T_f$ is the mapping torus of $f$. Use the sequence to calculate the homology of the 3-manifold $M$ obtained from $S^2 \times I$ by identifying $(x,0)$ to $(-x, 1)$ for all $x \in S^2$.}
+
+
+\section{Let $A \subseteq X \subseteq Q$ and consider
+$$H_k(Q, A) \stackrel{i_*}{\to} H_k(Q,X) \stackrel{\del}{\to} H_{k-1}(X,A)$$
+where $i$ is inclusion and $\del[z] = [\del_k[z]]$ for $\del_k : H_k(Q,X) \to H_{k-1}(X)$ that comes from the exact sequence of $(Q,X)$.}
+\subsection{Prove that $\del$ is well-defined.}
+\subsection{Prove that the image of $i_*$ equals the kernel of $\del$.}
+
+\section{Let $J(X, x_0) \subseteq \pi_1(X,x_0)$ be the subgroup of cyclic classes, where a class $\alpha$ is \emph{cyclic} if there is a homotopy $\{h_t : X \to X \}$ with $_0 = h_1=$ identity such that $[h_t(x_0)]= \alpha$.}
+\subsection{Prove that $J(X,x_0)$ is contained in the center of $\pi_1(X,x_0)$.}
+\subsection{Prove that if $X$ is a topological group, then $J(X,x_0) = \pi_1(X,x_0)$.}
+
+
+\end{document}
