@@ -1,0 +1,92 @@
+\documentclass[10pt]{article}
+
+\makeatletter \renewcommand\section{\@startsection{section}{1}{\z@}%
+  {-3.5ex \@plus -1ex \@minus -.2ex}%
+  {2.3ex \@plus.2ex}%
+  {\normalfont\large\bfseries}} \makeatother
+
+\addtolength{\oddsidemargin}{-.875in} \addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in} \addtolength{\topmargin}{-.875in}
+\addtolength{\textheight}{1.75in}
+
+\usepackage{amsmath, amssymb, amsthm, fancyhdr, graphicx, titlesec, titling}
+
+\setlength{\droptitle}{-6em} \posttitle{\par\end{center}\vspace{-4.8em}}
+
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\CP}{\ensuremath{\mathbb{CP}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\RP}{\ensuremath{\mathbb{RP}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+
+\newcommand{\del}{\ensuremath{\partial}}
+\newcommand{\rank}{\ensuremath{\mathrm{rank}}}
+
+\newcommand{\advsection}{\addtocounter{section}{1} \setcounter{subsection}{0}}
+
+\newcommand{\hint}[1]{(Hint: #1)}
+
+\pagestyle{fancyplain} \renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+\lhead{Frederick Robinson} \rhead{Spring 2002}
+
+\section{Let $M$ be a closed (compact, without boundary) manifold. Show that any
+  smooth function $$f: M \to \mathbb{R} $$ has a critical point.}
+
+\advsection{}
+
+\subsection{Show that every closed 1-form on $S^n$, $n>1$, is exact.}
+
+\subsection{Use this to show that every closed 1-form on $\mathbb{R} P^n$, $n>1$, is exact.}
+
+\section{Let $M^d$ be a $d$-dimensional manifold and $\omega_1, \dots, \omega_p$
+  be pointwise linearly independent 1-forms. If $\theta_1, \dots, \theta_p$ are
+  1-forms so that 
+$$\sum_{i=1}^p \omega_i \wedge \theta_i =0,$$
+then there exist smooth functions $f_{ij}$ such that $$\theta_i = \sum_{i=1}^p f_{ij} \omega_i,
+\quad i=1, \dots, p.$$ \hint{try $p=1$}}
+
+\section{Let $M$ be the set of all straight lines in $\mathbb{R} ^2$ (not just those which pass
+  through the origin). Show that $M$ is a smooth manifold and identify it with a well-known
+  manifold.  \\\\ \hint{Lines not through the origin have a unique closest point to the origin and
+    that point determines the line uniquely. What happens at the origin?}}
+
+\section{Let $f: M^m \to N^n$ be a smooth bijection so that $Df: T_p M \to T_{f(p)}N$ is injective
+  for all $p$. Show that $f$ is a diffeomorphism.}
+
+\advsection{}
+
+\subsection{Show that if $f: S^n \to S^n$ has no fixed points then $\deg(f) = (-1)^{n+1}$.}
+
+\subsection{Show that if $X$ has $S^{2n}$ as universal covering space then $\pi_1(x) = \{1\}$ or $\mathbb{Z}_2$.}
+
+\subsection{Show that if $X$ has $S^{2n+1}$ as universal covering space then $X$ is orientable.}
+
+\advsection{}
+
+\subsection{Outline the construction of the universal covering of a path connected locally simply
+  connected space $X$.}
+
+\subsection{Give an example of a path connected space which does not have a universal covering space.}
+
+\section{Let $X$ be a finite cell complex constructed inductively by gluing all $p$-cells onto cells
+of dimension $<p$. Assume no $p-1$ and $p+1$ cells are used to construct $X$. Show that 
+$$H_p(X,\mathbb{Z}) \simeq \mathbb{Z}^{n_p}$$
+when $n_p$ is the number of $p$-cells used in the construction.}
+
+\section{Let $(M, \del M)$ be a compact oriented $n$-manifold with a connected boundary $\del
+  M$. Show that there is no retract $r:M \to \del M$ so that $r(x) =x$ if $x \in \del M$. 
+\hint{Prove that $H_{n-1}(\del M) \to H_{n-1}(M)$ is trivial.}}
+
+\section{Let $X = T^2 \setminus \{ p,q\}$, $p \neq q$ be the twice punctured 2-dimensional torus.}
+
+\subsection{Compute the homology groups $H_*(X,\mathbb{Z})$.}
+
+\subsection{Compute the fundamental group of $X$.}
+
+
+
+
+\end{document}
