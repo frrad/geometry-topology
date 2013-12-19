@@ -1,0 +1,84 @@
+
+\documentclass[10pt]{article}
+
+\makeatletter \renewcommand\section{\@startsection{section}{1}{\z@}%
+  {-3.5ex \@plus -1ex \@minus -.2ex}%
+  {2.3ex \@plus.2ex}%
+  {\normalfont\large\bfseries}} \makeatother
+
+\addtolength{\oddsidemargin}{-.875in} \addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in} \addtolength{\topmargin}{-.875in}
+\addtolength{\textheight}{1.75in}
+
+\usepackage{amsmath, amssymb, amsthm, fancyhdr, graphicx, titlesec, titling}
+\usepackage[all]{xy}
+
+\setlength{\droptitle}{-6em} \posttitle{\par\end{center}\vspace{-4.8em}}
+
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\CP}{\ensuremath{\mathbb{CP}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\RP}{\ensuremath{\mathbb{RP}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+
+\newcommand{\del}{\ensuremath{\partial}}
+\newcommand{\rank}{\ensuremath{\mathrm{rank}}}
+\DeclareMathOperator{\dev}{div}
+
+\newcommand{\advsection}{\addtocounter{section}{1} \setcounter{subsection}{0}}
+\newcommand{\st}{s.t. }
+\newcommand{\hint}[1]{(Hint: #1)}
+
+\pagestyle{fancyplain} \renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+\lhead{Frederick Robinson} \rhead{Fall 2003}
+
+\section{Explain carefully how the classical ``divergence 
+$$\iint\limits_S \vec{V} \cdot \vec{n} d(\mathrm{area}) = \iiint\limits_V \dev \vec{V} d(\mathrm{volume})$$
+($V$ a bounded volume in $\mathbb{R} ^3, S= $ boundary of $V$) follows from Stokes' Theorem for
+differential forms.}
+
+\section{Without using deRham's Theorem, prove:}
+
+\subsection{every closed 1-form on $S^2$ is exact.}
+
+\subsection{a two-form $\Omega$ is exact on $S^2$ if and only if 
+$$\int_{S^2}\Omega=0.$$}
+
+\section{Show that the set of all lines in $\mathbb{R} ^2$ has a natural structure as a
+  differentiable manifold. What (already familiar) manifold is it?}
+
+\section{Show that $S^3$ is the union of two solid tori $(S^1 \times 2$-disc) with an embedded torus
+  $(S^1 \times S^1)$ as their common boundary. \hint{Express $\mathbb{R} ^3$ with a solid torus
+    removed as a union of circles and a single straight line and then add a point at infinity.}}
+
+\section{Suppose $M$ is a compact manifold (with empty boundary).}
+
+\subsection{Prove that, if $f: M \to \mathbb{R}$ is a $C^\infty$ function, then $f$ has at least two
+critical points.}
+
+\subsection{A $C^\infty$ function on $S^1 \times S^1$ cannot have only two critical points. Prove
+  this (e.g.) by deforming a homotopically nontrivial $S'$ along the gradient flow of $f: M \to \mathbb{R} $. }
+
+\advsection{}
+
+\subsection{Prove carefully that a group of homeomorphisms of $S^{2n}$, each of which has no fixed
+  points (unless it is the identity map) contains at most two elements.}
+
+\subsection{Give a counterexample for some $S^{2n+1}$, $n \geq 1$.}
+
+\section{Find the homology groups with $\mathbb{Z}$ coefficients, of $\mathbb{R} P^n$, $n=2,3,4,
+  \dots$ by some systematic rigorous method.}
+
+\section{Find the homology and the fundamental group of $S^1 \times S^1$ with two points removed.}
+
+\section{Prove that if a compact (empty boundary) manifold $X$ has $S^{2n+1}$, $n \geq 1$, as a
+  covering space, then $X$ is orientable.}
+
+\section{Suppose $M$ is a compact manifold (empty boundary). Prove that
+$$H_n(M,\mathbb{Z} ) \simeq \mathbb{Z} .$$
+(You may assume $M$ is triangulated.)}
+
+\end{document}
