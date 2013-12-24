@@ -1,0 +1,122 @@
+\documentclass[10pt]{article}
+
+\makeatletter \renewcommand\section{\@startsection{section}{1}{\z@}%
+  {-3.5ex \@plus -1ex \@minus -.2ex}%
+  {2.3ex \@plus.2ex}%
+  {\normalfont\large\bfseries}} \makeatother
+
+\addtolength{\oddsidemargin}{-.875in} \addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in} \addtolength{\topmargin}{-.875in}
+\addtolength{\textheight}{1.75in}
+
+\usepackage{amsmath, amssymb, amsthm, fancyhdr, graphicx, titlesec, titling}
+\usepackage[all]{xy}
+
+\setlength{\droptitle}{-6em} \posttitle{\par\end{center}\vspace{-4.8em}}
+
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\CP}{\ensuremath{\mathbb{CP}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\RP}{\ensuremath{\mathbb{RP}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+
+\newcommand{\del}{\ensuremath{\partial}}
+\newcommand{\rank}{\ensuremath{\mathrm{rank}}}
+\DeclareMathOperator{\dev}{div}
+\DeclareMathOperator{\vol}{vol}
+
+\newcommand{\advsection}{\addtocounter{section}{1} \setcounter{subsection}{0}}
+\newcommand{\st}{s.t. }
+\newcommand{\hint}[1]{(Hint: #1)}
+\newcommand{\note}[1]{(Note: #1)}
+
+\pagestyle{fancyplain} \renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+\lhead{Frederick Robinson} \rhead{Spring 2010}
+
+\section{Let $M_n$ be the space of all $n\times n$ matrices with real entries and let $S_n$ be the
+  subset consisting of all symmetric matrices. Consider the map $F: M_n \to S_n$ defined by $F(A) =
+  A A^t - I$, where $I$ is the identity matrix and $A^t$ is the transpose of $A$.}
+
+\subsection{Show that $0_{n \times n}$ (the $n \times n$ matrix with all entries 0) is a regular
+  value of $F$. }
+
+\subsection{Deduce that $O(n)$, the set of all $n \times n$ matrices such that $A^{-1} = A^t$ is a
+  submanifold of $M_n$. }
+
+\subsection{Find the dimension of $O(n)$ and determine the tangent space of $O(n)$ at the identity
+  matrix as a subspace of the tangent space of $M_n$ which is $M_n$ itself.}
+
+\section{Show that $T^2 \times S^n$, $n \geq 1$ is parallelizable, where $S^n$ is the $n$ sphere,
+  $T^2 = S^1 \times S^1$ is the two torus, and a manifold of dimension $k$ is said to be
+  parallelizable if there are $k$ vector fields $V_1, \dots, V_k$ on it with $V_1(p), \dots, V_k(p)$
+  linearly independent for all points $p$ of the manifold.}
+
+\section{Suppose $\pi : M_1 \to M_2$ is a $C^\infty$ map of one connected differentiable manifold to
+  another. And suppose for each $p \in M_1$, the differential $\pi_* :T_pM_1 \to T_{\pi(p)} M_2$ is a vector
+  space isomorphism.}
+
+\subsection{Show that if $M_1$ is connected, then $\pi$ is a covering space projection.}
+
+\subsection{Give an example where $M_2$ is compact but $\pi: M_1 \to M_2$ is not a covering space
+  (but has the $\pi_*$ isomorphism property). }
+
+\section{Let $\mathcal{F}^k(M)$ denote the differentiable ($C^\infty$) $k$-forms on a manifold
+  $M$. Suppose $U$ and $V$ are open subsets of a differentiable manifold.}
+
+\subsection{Explain carefully how the usual exact sequence
+  $$0 \to \mathcal{F}(U \cup V) \to \mathcal{F}(U) \oplus \mathcal{F}(V) \to \mathcal{F}(U \cap V)
+  \to 0$$
+  arises.}
+\label{ues}
+
+\subsection{Write down the ``long exact sequence'' in de Rham cohomology associated to the short
+  exact sequence in part \ref{ues} and describe explicitly how the map
+  $$H^k_{deR}(U \cap V) \to H^{k+1}_{deR}( U \cup V)$$
+  arises.}
+
+\section{Explain carefully why the following holds: if $\pi: S^N \to M$, $N > 1$ is a covering space
+  with $M$ orientable, then every closed $k$-form on $M$, $1 \leq k < M$ is exact. \hint{Recall that
+  the covering transformations in this situation form a group $G$ with $S^n / G \simeq M$.}}
+
+\section{Calculate the singular homology of $\mathbb{R}^n$, $n > 1$, with $k$-points removed, $k
+  \geq 1$. (Your answer will depend on $k$ and $n$).}
+
+\advsection{}
+
+\subsection{Explain what is meant by adding a handle to a 2-sphere for a two dimensional orientable
+  surface in general.}
+
+\subsection{Show that a 2-sphere with a positive number of handles attached cannot be simply
+  connected.}
+
+\advsection{}
+
+\subsection{Define the degree $\deg f$ of a $C^\infty$ map $f: S^2 \to S^2$ and prove that $\deg f$
+  as you present it is well-defined and independent of any choices you need to make in your
+  definition.}
+
+\subsection{Prove in detail that for each integer $k$ (possibly negative), there is a $C^\infty$ map
+  $f: S^2 \to S^2$ of degree $k$.}
+
+\section{Explain how Stokes Theorem for manifolds with boundary gives, as a special case, the
+  classical divergence theorem (about $\iiint_U \dev V d(\vol )$, where $U$ is a bounded open set in
+  $\mathbb{R}^3$ with smooth boundary and $V$ is a $C^\infty$ vector field on $\mathbb{R}^3$).}
+
+\advsection{}
+
+\subsection{Show that every map $F: S^n \to S^1 \times \cdots \times S^1$ ($k$ copies of $S^1$) is
+  null-homotopic (homotopic to a constant map).}
+
+\subsection{Show that there is a map $F: S^1 \times \cdots \times S^1$ ($n$ copies) $ \to S^n$ such
+  that $F$ is not null-homotopic.}
+
+\subsection{Show that every map $F: S^n \to S^{n_1} \times S^{n_2} \times \cdots \times S^{n_k}$,
+  $n_1 + \cdots + n_k = n$, $n_j > 0$, $k\geq 2$, has degree 0. (You may use any definition of
+  degree you like, and you may assume $F$ is $C^\infty$).}
+
+
+
+\end{document}
