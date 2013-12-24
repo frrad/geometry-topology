@@ -1,0 +1,92 @@
+\documentclass[10pt]{article}
+
+\makeatletter \renewcommand\section{\@startsection{section}{1}{\z@}%
+  {-3.5ex \@plus -1ex \@minus -.2ex}%
+  {2.3ex \@plus.2ex}%
+  {\normalfont\large\bfseries}} \makeatother
+
+\addtolength{\oddsidemargin}{-.875in} \addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in} \addtolength{\topmargin}{-.875in}
+\addtolength{\textheight}{1.75in}
+
+\usepackage{amsmath, amssymb, amsthm, fancyhdr, graphicx, titlesec, titling}
+\usepackage[all]{xy}
+
+\setlength{\droptitle}{-6em} \posttitle{\par\end{center}\vspace{-4.8em}}
+
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\CP}{\ensuremath{\mathbb{CP}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\RP}{\ensuremath{\mathbb{RP}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+
+\newcommand{\del}{\ensuremath{\partial}}
+\newcommand{\rank}{\ensuremath{\mathrm{rank}}}
+\DeclareMathOperator{\dev}{div}
+\DeclareMathOperator{\vol}{vol}
+
+\newcommand{\advsection}{\addtocounter{section}{1} \setcounter{subsection}{0}}
+\newcommand{\st}{s.t. }
+\newcommand{\hint}[1]{(Hint: #1)}
+\newcommand{\note}[1]{(Note: #1)}
+
+\pagestyle{fancyplain} \renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+\lhead{Frederick Robinson} \rhead{Fall 2011}
+
+\section{Let $M$ be an (abstract) compact smooth manifold. Prove that there exists some $n \in
+  \mathbb{Z}^+$ such that $M$ can be smoothly embedded in Euclidean space $\mathbb{R}^n$.}
+
+\section{Prove that the real projective space $\mathbb{R}P^n$ is a smooth manifold of dimension $n$.}
+
+\section{Let $M$ be a compact, simply connected smooth manifold of dimension $n$. Prove that there
+  is no smooth immersion $f: M \to T^n$, where $T^n = S^1 \times \cdots \times S^1$ is the
+  $n$-torus.}
+
+\section{Give a topological proof of the Fundamental Theorem of Algebra: any non-constant
+  single-variable polynomial with complex coefficients has at least one complex root.}
+
+\section{Let $f: M \to N$ be a smooth map between two manifolds $M$ and $N$. Let $\alpha$ be a
+  $p$-form on $N$. Show that $d(f^*\alpha) = f^*(d\alpha)$.}
+
+\advsection
+
+\subsection{What are the de Rham cohomology groups of a smooth manifold?}
+
+\subsection{State de Rham's Theorem.}
+
+\section{Consider the form 
+  $$ \omega = (x^2 + x + y) dy \wedge dz$$
+  on $\mathbb{R}^3$. Let $S^2 = \left\{ x^2 + y^2 + z^2 = 1 \right\} \subset\mathbb{R}^3$ be the
+  unit sphere, and $i : S^2 \to \mathbb{R}^3$ the inclusion.}
+
+\subsection{Calculate $\int_{S^2} \omega$.}
+
+\subsection{Construct a closed form $\alpha$ on $\mathbb{R}^3$ such that $i^*\alpha = o^*\omega$, or
+  show that such a form $\alpha$ does not exist.}
+
+\advsection{}
+
+\subsection{Let $M$ be a M\"obius band. Using homology, show that there is no retraction from $M$ to
+$\del M$.}
+
+\subsection{Let $K$ be a Klein bottle. Show that there exist homotopically nontrivial simple closed
+  curves $\gamma_1$ and $\gamma_2$ on $K$ such that $K$ retracts to $\gamma_1$, but does not retract
+  to $\gamma_2$. }
+
+\section{Let $X$ be the topological space obtained from a pentagon by identifying its edges as in
+  the picture:
+  $$PICTURE HERE$$
+  Calculate the homology and cohomology groups of $X$ with integer coefficients.}
+
+\section{Let $X,Y$ be topological spaces and $f,g : X \to Y$ two continuous maps. Consider the space
+  $Z$ obtained from the disjoint union $Y \amalg ( X \times [0,1])$ by identifying $(x,0) \sim
+  f(x)$ and $(x,1) \sim g(x)$ for all $x \in X$. Show that there is a long exact sequence of the
+  form:
+  $$ \cdots \to H_n(X) \to H_n(Y) \to H_n(Z) \to H_{n-1}(X) \to \cdots$$}
+
+
+
+\end{document}
