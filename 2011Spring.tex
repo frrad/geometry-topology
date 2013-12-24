@@ -1,0 +1,113 @@
+\documentclass[10pt]{article}
+
+\makeatletter \renewcommand\section{\@startsection{section}{1}{\z@}%
+  {-3.5ex \@plus -1ex \@minus -.2ex}%
+  {2.3ex \@plus.2ex}%
+  {\normalfont\large\bfseries}} \makeatother
+
+\addtolength{\oddsidemargin}{-.875in} \addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in} \addtolength{\topmargin}{-.875in}
+\addtolength{\textheight}{1.75in}
+
+\usepackage{amsmath, amssymb, amsthm, fancyhdr, graphicx, titlesec, titling}
+\usepackage[all]{xy}
+
+\setlength{\droptitle}{-6em} \posttitle{\par\end{center}\vspace{-4.8em}}
+
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\CP}{\ensuremath{\mathbb{CP}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\RP}{\ensuremath{\mathbb{RP}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+
+\newcommand{\del}{\ensuremath{\partial}}
+\newcommand{\rank}{\ensuremath{\mathrm{rank}}}
+\DeclareMathOperator{\dev}{div}
+\DeclareMathOperator{\vol}{vol}
+
+\newcommand{\advsection}{\addtocounter{section}{1} \setcounter{subsection}{0}}
+\newcommand{\st}{s.t. }
+\newcommand{\hint}[1]{(Hint: #1)}
+\newcommand{\note}[1]{(Note: #1)}
+
+\pagestyle{fancyplain} \renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+\lhead{Frederick Robinson} \rhead{Spring 2011}
+
+\section{Show that if $V$ is a smooth vector field on a (smooth) manifold of dimension $n$ and if
+  $V(p)$ is nonzero for some point $p$, then there is a coordinate system defined on a neighborhood
+  of $p$, say $(x_1, \dots, x_n)$, such that on a neighborhood of $p$, $V =$ the $x_1$ coordinate
+  vector field.}
+
+\advsection{}
+
+\subsection{Demonstrate the formula $L_x = di_x + i_x d$, where $L$ is the Lie derivative and $i$ is
+  the interior product.}
+
+\subsection{Use this formula to show that a vector-field $X$ on $\mathbb{R}^3$ has a flow (locally)
+  that preserves volume if and only if the divergence of $X$ is everywhere 0. [Here divergence is
+  the classical operator that takes a vector field with components $f,g,h$ to the function $f_x +
+  g_y + h_z$, in the usual partial derivative notation $f_x = x$-partial of $f$, etc.]}
+
+\advsection{}
+
+\subsection{Explain some systematic reason why there is a closed 2-form on $\mathbb{R}^3 \setminus
+  \left\{ (0,0,0) \right\} $ (Euclidean 3-space with one point removed) that is not exact. You man
+  do this by exhibiting such a form explicitly and checking that it is closed but not exact or you
+  may argue using theorems that such a form must exist.}
+\label{above}
+
+\subsection{With $\varphi$ such a form (as in part \ref{above}), discuss why, for any smooth map of
+  $S^2$ to itself, such a number
+  $$\left(\int_{S_2} F^* \varphi\right) / \left(\int_{S_2}\varphi  \right)$$
+  is the degree of $f$. [Note that this includes explaining why the denominator integral cannot be 0.].}
+
+\section{Show without using de Rham's Theorem (but you may use the Poincare Lemma without proof),
+  that a 2-form $\varphi$ on the 2-sphere $S^2$ that has integral 0 is exact, i.e., equal to $d
+  \omega$ for some 1-form $\omega$ on $S^2$.}
+
+\section{Suppose that $V: U \to S^2$ is a smooth map, considered as a vector field of unit vectors,
+  where $U = \mathbb{R}^3 $ with a finite number of points $p_1, \dots, p_n$ removed, all these
+  points lying strictly inside the unit sphere $S^2$. \\\\ Explain carefully, from basic facts about
+  critical values and critical points and the like, why the degree of $V|_{S^2} : S^2 \to S^2$ is
+  equal to the sum of the indices of the vector field $V$ at the points $p_1, \dots, p_n$.}
+
+\advsection{}
+
+\subsection{Explain what a short exact sequence of chain complexes is.}
+
+\subsection{Describe how a short exact sequence of chain complexes gives rise to a long exact
+  sequence in homology. Include how the connecting homomorphism (where the dimension changes)
+  arises. You do not need to prove exactness of this sequence.}
+
+\advsection{}
+
+\subsection{Define complex projective space $\mathbb{C} P^n$, $n = 1,2,3, \dots$}
+
+\subsection{Compute the homology and cohomology of $\mathbb{C} P^n$, $\mathbb{Z}$ coefficients. (Any
+  method is allowed. Cell complexes are particularly simple to use. Be sure to explain what the
+  attaching maps are if you adopt this approach).}
+
+\advsection{}
+
+\subsection{Find the $\mathbb{Z}$-coefficient homology of $\mathbb{R} P^2$ by any systematic
+  method.}
+
+\subsection{Explain explicitly (not using the K\"unneth Theorem) how a nonzero element of the
+  3-homology with $\mathbb{Z}$-coefficients of $\mathbb{R} P^2 \times \mathbb{R} P^2$ arises.}
+
+\advsection{}
+
+\subsection{State the Lefschetz Fixed Point Theorem.}
+
+\subsection{Show that the Lefschetz number of any map from $\mathbb{C} P^{2n}$ to itself is nonzero
+  and hence that every map from $\mathbb{C} P^{2n}$ to itself has a fixed point. \hint{The action of
+    the map on cohomology with $\mathbb{Z}$ coefficients is determined by what happens to the 2nd
+    cohomology since the whole cohomology ring is generated by the 2nd cohomology.}}
+
+\section{Compute explicitly the simplicial homology, $\mathbb{Z}$ coefficients, of the surface of a
+  tetrahedron, thus obtaining the homology of the 2-sphere.}
+
+\end{document}
