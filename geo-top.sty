@@ -23,9 +23,10 @@
 \DeclareMathOperator{\dev}{div}
 \DeclareMathOperator{\vol}{vol}
 
-\newcommand{\mat}[3]{\mathrm{Mat}_{#1 \times #2}(#3)} %1 by 2 matrices over 3
+\newcommand{\mat}[3]{\ensuremath{M_{#1 \times #2}(#3)}} %1 by 2 matrices over 3
 \newcommand{\cp}[1]{\ensuremath{\mathbb{C}P^{#1}}}
-\newcommand{\gl}[2]{\ensuremath{\mbox{Gl}_{#1}(#2)}}
+\newcommand{\GL}[2]{\ensuremath{\mbox{GL}_{#1}(#2)}}    %the general linear group over 2
+\newcommand{\SL}[2]{\ensuremath{SL(#1,#2)}}             %the special linear group over 2
 
 \newcommand{\advsection}{\addtocounter{section}{1} \setcounter{subsection}{0}}
 \newcommand{\st}{s.t. }
