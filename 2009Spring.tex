@@ -10,4 +10,56 @@
 \subquestion{Show that a closed 1-form $\theta$ on $S^1 \times (-1,1)$ is $dF$ for some function $F: S^1 \times (-1,1) \to \R$ if and only if $\int_{S^1} i^* \theta =0$ where $i: S^1 \to S^1 \times (-1 ,1 )$ is defined by $i(p) = (p,0)$ for $p \in S^1$.}
 \subquestion{Show that a 2-form $\omega$ on $S^2$ is $d\theta$ for some 1-form $\theta$ on $S^1$ if and only if $\int_{S^2} \omega =0$.}
 
+\question{Suppose that $M,N$ are connected \smooth manifolds of the same dimension $n \geq 1$ and $F: M\to N$ is a \smooth map such that $dF: T_p M \to T_{F(p)} N$ is surjective for each $p \in M$.}
+\subquestion{Prove that if $M$ is compact, then $F$ is onto and $F$ is a covering map.}
+\subquestion{Find an example of such an everywhere nonsingular equidimensional map where $N$ is compact, $F$ is onto, $F^{-1}(p)$ is finite for each $p \in N$, but $F$ is not a covering map.\\ \note{A clearly explained pictorial version of $F$ will be acceptable; you do not have to have a ``formula" for $F$.}}
+
+\nextquestion
+\subquestion{Suppose that $M$ is a \smooth connected manifold. Prove that, given an open subset $U$ of $M$ and a finite set of points $p_1, p_2, \dots, p_k$ in $M$, there is a diffeomorphism $F: M \to M$ such that $f(\{ p_1, p_2, \dots, p_k\}) \subset U$. \hint{Construct $F$ one point at a time}}
+\label{3a}
+\subquestion{Use part (\ref{3a}) to show that if $M$ is compact and the Euler characteristic $\chi(M) = 0$, then there is a vector field on $M$ which vanishes nowhere. You man assume that if a vector field has isolated zeros, then the sum of the indices at the zero points equals $\chi(M)$. }
+
+\question{A smooth vector field $V$ on $\R^3$ is said to be ``gradient-like" if, for each $p \in \R^3$, there is a neighborhood $U_p$ of $p$ and a function $\lambda_p : U_p \to \R \setminus \{0\}$ such that $\lambda_pV$ on $U_p$ is the gradient of some \smooth function on $U_p$. Suppose $V$ is nowhere zero on $\R^3$. Then show that $V$ is gradient-like if and only if $\curl V$ is perpindicular to $V$ at each point of $\R^3$.}
+
+\question{Suppose that $M$ is a compact \smooth manifold of dimension $n$.}
+\subquestion{Show that there is a positive integer $k$ such that there is an immersion $F: M \to \R^k$.}
+\subquestion{Show that if $k > 2n$, there is a $(k-1)$-dimensional subspace $H$ of $\R^k$ such that $P \circ F$ is an immersion, where $P: \R^k \to H$ is orthogonal projection.}
+
+splat
+
+\question{Let \GLs{+}{n}{\R} be the set of $n \times n$ matrices with determinant $> 0$. Note that \GLs{+}{n}{\R} can be considered to be a subset of $\R^{n^2}$ and this subset is open.}
+\subquestion{Prove that $\SLs{+}{n}{\R} = \{ A \in \GLs{+}{n}{\R} \mid \det A = 1 \}$ is a submanifold.}
+\subquestion{Identify the tangent space of $\SLs{+}{n}{\R}$ at the identity matrix $I_n$. }
+\subquestion{Prove that, for every $n \times n$ matrix $B$, the series $I_n + B + \frac{1}{2} B^2 + \cdots + \frac{1}{n!} B^n + \cdots $ converges to some $n \times n$ matrix. Call this sum $e^B$.}
+\subquestion{Prove that if $e^{tB} \in \SLs{+}{n}{\R}$ for all $t \in \R$, then $\tr B =0$}
+\subquestion{Prove that if $\tr B = 0$, then $e^B \in \SLs{+}{n}{\R}$. \\ \hint{Use one-parameter subgroups or note that it suffices to treat complex-diagonalizable $B$ since such are dense.}}
+
+\nextquestion
+\subquestion{Define complex projective space \CP{n}.}
+\subquestion{Calculate the homology of \CP{n}. Any systematic method such as Mayer-Vietoris or cellular homology is acceptable.}
+
+\question{Let $p : E \to B$ be a covering space and $f:X \to B$ a map. Define $E^* = \{ (x,e) \in X \times B: f(x) = p(e)\}$. Prove that $q: E^* \to X$ defined by $q(x,e) =x$ is a covering space.}
+
+\nextquestion
+\subquestion{Explain carefully and concretely what it means for two (smooth) maps of $S^1$ into $\R^2$ to be transversal. }
+\label{9a}
+\subquestion{Do the same for maps of $S^1$ into $\R^3$.}
+\label{9b}
+\subquestion{Explain what it means for transversal maps to be ``generic" and prove that they are indeed generic in the cases of (\ref{9a}) and (\ref{9b}).}
+
+\question{Let $M$ be the 3-manifold with boundary obtained as the union of the two-holed torus in 3-space and the bounded component of its complement. Let $X$ be the space obtained from $M$ by deleting $k$ points from the interior of $M$.}
+\subquestion{Calculate the fundamental group of $X$.}
+\subquestion{Calculate the homology of $X$.}
+
+\question{Let $P$ be a finite polyhedron.}
+\subquestion{Define the Euler characteristic $\chi(P)$ of $P$. }
+\subquestion{Prove that if $P_1, P_2$ are subpolyhedra of $P$ such that $P_1 \cap P_2$ is a point and $P_1 \cup P_2 = P$, then $\chi(P) = \chi(P_1) + \chi(P_2) - 1$.}
+\subquestion{Suppose that $p:E \to P$ is an $n$-sheeted covering space of $P$, that is $p^{-1}(x)$ is $n$ points for each $x \in P$. Prove that $\chi(E) = n \chi(P)$.}
+
+
+\question{Let $f: T\to T = S^1 \times S^1$ be a map of the torus inducing $f_\pi : \pi_1(T) \to \pi_1(T) = \Z \oplus \Z$ and let $F$ be a matrix representing $f_\pi$. Prove that the determinant of $F$ equals the degree of the map $f$.}
+
+
+
+
 \end{document}
